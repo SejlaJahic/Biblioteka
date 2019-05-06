@@ -8,7 +8,7 @@ public class Knjiga {
 	protected String naziv;
 	protected boolean posudjena;
 
-	private int brojac = 0;
+	public static int brojac = 0;
 	public static ArrayList<Knjiga> knjige = new ArrayList<>();
 
 	public Knjiga() {

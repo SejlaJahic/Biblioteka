@@ -8,7 +8,7 @@ public class Racun {
 	protected String ime;
 	protected int brojPosKnjiga;
 
-	private int brojac = 0;
+	public static int brojac = 0;
 	public static ArrayList<Racun> racuni = new ArrayList<>();
 
 	public Racun() {

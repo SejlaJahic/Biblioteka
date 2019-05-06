@@ -25,7 +25,7 @@ public class PodizanjeKnjige {
 		brojac++;
 	}
 	
-	public  void posudjivanje(Racun racun, Knjiga knjiga) {
+	public void posudjivanje(Racun racun, Knjiga knjiga) {
 	knjiga.posudjena=true;
 	Knjiga.knjige.remove(knjiga.brojKnjige);
 	Racun.racuni.set(racun.brojPosKnjiga++, racun);
@@ -74,9 +74,11 @@ public class PodizanjeKnjige {
 		if(PodizanjeKnjige.iznajmljene.isEmpty()) {
 			System.out.println("Trenutno nijedna knjiga nije iznajmljena!");
 		}
+		else {
 		System.out.println("Sljedeæe knjige su iznajmljene: ");
 		for(PodizanjeKnjige e : iznajmljene) {
 			System.out.println(e);
+		}
 		}
 	}
 	@Override
